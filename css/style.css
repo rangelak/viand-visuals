@@ -1,0 +1,430 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oswald:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200&display=swap');
+
+/* Backgrounds */
+.bg-dark {
+    background-color: #3c6478 !important;
+}
+
+.bg-white {
+    background-color: white !important;
+}
+
+.bg-login {
+    background-image: url(../img/login-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-light {
+    background-color: #fcfdfe;
+}
+
+.bg-lettuce {
+    background-color: #5c8f22 !important;
+
+}
+
+.bg-appricot {
+    background-image: url(../img/appricots.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-tomato {
+    background-color: rgba(235, 94, 48, 0.2);
+}
+
+/* Text colors */
+.text-primary {
+    /*color: #8db600 !important;*/
+    color: #0d3d56 !important;
+    font-family: Quicksand, sans-serif;
+}
+
+.text-secondary {
+    /*    color: #eaf1ac !important;*/
+    color: #3c6478 !important;
+}
+
+/* Headlines */
+.headline-1 {
+    font-size: 85pt;
+    font-family: Oswald,
+        sans-serif;
+}
+
+.headline-2 {
+    font-size: 45pt;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.headline-4 {
+    font-size: 25pt;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.headline-sub {
+    font-size: 40pt;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.navbar-brand {
+    font-family: Oswald, sans-serif;
+}
+
+.navbar {
+    font-family: Quicksand, sans-serif;
+}
+
+/* General */
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    text-align: center;
+    box-shadow: 0px 8px 8px -5px rgba(0, 0, 0, 0.33);
+}
+
+.navbar .nav-item a:hover {
+    color: white !important;
+
+}
+
+.nav-pills {
+    cursor: pointer;
+    font-family: Quicksand, sans-serif;
+}
+
+.btn {
+    font-family: Quicksand, sans-serif;
+/*    white-space: normal !important;
+    word-wrap: break-word;*/
+}
+
+.nav-pills .nav-item .active {
+    background-color: #3c6478 !important;
+}
+
+.nav-pills .nav-item:hover {
+    color: #bca136 !important;
+}
+
+/* Containers */
+.container-height {
+    height: calc(100vh - 50px);
+}
+
+.container .row .category {
+    background-color: white !important;
+
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+.fill img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: calc(100vh - 50px);
+    max-height: calc(100vh - 50px);
+}
+
+.category-title {
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.category-title:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+
+.category-title[aria-expanded="false"] {
+    background-color: #3c6478 !important;
+    padding: 15pt;
+    color: #fcfdfe !important;
+    margin-bottom: 0px;
+    border-radius: 15pt;
+}
+
+.category-title[aria-expanded="true"]:after {
+    content: "\2212";
+}
+
+.category-title[aria-expanded="true"] {
+    background-color: #3c6478 !important;
+    padding: 15pt;
+    color: #fcfdfe !important;
+    margin-bottom: 0px;
+    border-top-left-radius: 15pt;
+    border-top-right-radius: 15pt;
+}
+
+.food-list {
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.food-list .list-group-item {
+    color: #3c6478 !important;
+}
+
+.food-list .list-group-item .btn {
+    float: right;
+    margin-left: 15pt;
+    vertical-align: bottom;
+}
+
+.food-list .list-group-item:hover {
+    background-color: rgba(60, 100, 120, 0.07) !important;
+}
+
+.food-list .list-group-item:last-child {
+    border-bottom-left-radius: 15pt !important;
+    border-bottom-right-radius: 15pt !important;
+}
+
+.category {
+    box-shadow: 6px 5px 10px 1px rgba(0, 0, 0, 0.33);
+    border-radius: 15pt;
+    margin-top: 25pt;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 80pt;
+}
+
+/* Navigation arrows */
+
+.arrow-down {
+
+    border: solid #3c6478;
+    border-width: 0 7px 7px 0;
+    display: inline-block;
+    padding: 7px;
+    position: absolute;
+    bottom: 25pt;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-down:hover {
+    border: solid #0d3d56;
+    border-width: 0 10px 10px 0;
+    display: inline-block;
+    padding: 10px;
+
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* Animations */
+
+.text-focus-in {
+    -webkit-animation: text-focus-in 1000ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation: text-focus-in 1000ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.tracking-in-expand {
+    -webkit-animation: tracking-in-expand 0.7s ease-in 1.2s both;
+    animation: tracking-in-expand 0.7s ease-in 1.2s both;
+}
+
+/*.category:hover {
+    -webkit-animation: wobble-hor-bottom 0.8s both;
+    animation: wobble-hor-bottom 0.8s both;
+}
+*/
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-26 19:20:27
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+@keyframes wobble-hor-bottom {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-26 18:56:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes text-focus-in {
+    0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-10-26 19:5:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
