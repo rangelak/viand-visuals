@@ -1,0 +1,41 @@
+.tray-title {
+    cursor: pointer;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tray-title:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+
+.tray-title[aria-expanded="false"] {
+    background-color: #000 !important;
+    padding: 15pt;
+    color: #fcfdfe !important;
+    margin-bottom: 0px;
+    border-radius: 15pt;
+}
+
+.tray-title[aria-expanded="true"]:after {
+    content: "\2212";
+}
+
+.tray-title[aria-expanded="true"] {
+    background-color: #000 !important;
+    padding: 15pt;
+    color: #fcfdfe !important;
+    margin-bottom: 0px;
+    border-top-left-radius: 15pt;
+    border-top-right-radius: 15pt;
+}
+
+.tray {
+    box-shadow: 6px 5px 10px 1px rgba(0, 0, 0, 0.33);
+    border-radius: 15pt;
+    margin-top: 25pt;
+}

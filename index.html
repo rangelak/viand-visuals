@@ -8,6 +8,7 @@
     <title>Viand Alpha</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tray.css">
 </head>
 
 <body class="bg-light">
@@ -27,13 +28,46 @@
             </div>
         </div>
         <div class="container bg-dark pt-3"> </div>
-
         <div class="container pt-5 pb-5 bg-white">
             <div class="row">
-                <div class="col-md-6" id="content"></div>
-                <div class="col-md-6" id="food_info"></div>
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-row">
+                                <div class="col-md-6">
+                                    <label for="meal_date">Select meal date</label>
+                                    <input class='form-control' onchange="updateDay()" type="date" id='meal_date' min='2019-11-10'>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="select_meal">Select meal time</label>
+                                    <select class='form-control' id="select_meal" onchange='updateMeal()'></select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="content">
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="sticky">
+                        <div class="mb-4" >
+                            <div class="panel-group">
+                                <div class="panel tray">
+                                    <h5 class="panel-heading tray-title "data-toggle='collapse' aria-expanded='false' data-target='#tray'>Tray</h5>
+                                    <div class="panel-collapse collapse" id='tray'>
+                                        <ul class ="food-list list-group" >
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="food_info"></div>
+                    </div>
+                </div>
                 <div class="col-md-7">
-                    <div class="container" id="">
+                    <div class="chart-area" id="chart-area">
                     </div>
                 </div>
             </div>
@@ -52,6 +86,7 @@
     <!-- Your implementation -->
     <script src="js/barchart.js"></script>
     <script src="js/areachart.js"></script>
+    <script src='js/helpers.js'></script>
     <script src="js/main.js"></script>
     <script src="js/responsivefy.js"></script>
 </body>
